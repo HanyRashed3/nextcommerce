@@ -6,6 +6,14 @@ import QtyAddToCart from "@/components/QtyAddToCart";
 export default async function ProductPage({ params }) {
   const product = await getProduct(params.id);
 
+  if (!product) {
+    return (
+      <main className="container" style={{ padding: "24px 0" }}>
+        <p>Product not found.</p>
+      </main>
+    );
+  }
+
   return (
     <main className="container" style={{ padding: "24px 0" }}>
       <div
