@@ -147,7 +147,7 @@ export default function Hero({ products = [], intervalMs = 2800 }) {
                       alt={p.title || "product"}
                       width={900}
                       height={900}
-                      priority={i === 1} // أول سلايد حقيقي
+                      priority={i === 1}
                     />
                   ) : (
                     <div className={styles.phone} />

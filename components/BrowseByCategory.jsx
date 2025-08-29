@@ -14,7 +14,6 @@ export default function BrowseByCategory({ categories = [] }) {
           {categories.map((cat) => (
             <Link key={cat} href={`/category/${encodeURIComponent(cat)}`}>
               <span className={styles.pill}>
-                {/* ممكن تضيف أيقونات لاحقًا حسب النوع */}
                 <span style={{ textTransform: "capitalize" }}>{cat}</span>
               </span>
             </Link>

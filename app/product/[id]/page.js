@@ -1,4 +1,3 @@
-// app/product/[id]/page.js
 import Image from "next/image";
 import { getProduct } from "@/lib/api";
 import QtyAddToCart from "@/components/QtyAddToCart";

@@ -10,7 +10,7 @@ export const metadata = { title: "Shop - Cyber Store" };
 
 export default async function ShopPage({ searchParams }) {
   const [all, categories] = await Promise.all([
-    getAllProducts(), // 20 عنصر من Fake Store
+    getAllProducts(),
     getCategories(),
   ]);
 

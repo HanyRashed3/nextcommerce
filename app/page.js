@@ -11,14 +11,13 @@ export default async function Home() {
     getAllProducts(),
   ]);
 
-  const heroProducts = all.slice(0, 5);
+  // const heroProducts = all.slice(0, 5);
   const newArrival = all.slice(0, 8);
   const bestseller = all.slice(8, 16);
   const discounts = all.slice(12, 20);
 
   return (
     <>
-      <BrowseByCategory categories={categories} />
       <ProductsSection title="New Arrival" products={newArrival} />
       <ProductsSection title="Bestseller" products={bestseller} />
       <DiscountsSection products={discounts} />
